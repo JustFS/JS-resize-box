@@ -5,7 +5,7 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass" : "sass --watch ./main.scss:./style.css"
+    "sass": "sass --watch ./main.scss:./style.css"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/JustFS/basic-project-file/issues"
   },
-  "homepage": "https://github.com/JustFS/basic-project-file#readme"
+  "homepage": "https://github.com/JustFS/basic-project-file#readme",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
 }

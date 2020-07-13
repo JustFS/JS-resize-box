@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Artifika&display=swap");
 body {
   margin: 0;
   padding: 0;
+  font-family: Artifika, sans-serif;
 }
 
 .main {
@@ -10,30 +12,51 @@ body {
 }
 .main .top {
   display: flex;
-  flex: 0 0 50%;
+  flex: 0 0 60%;
   flex-direction: row;
+  overflow: hidden;
 }
 .main .top .box-1 {
-  background: aquamarine;
+  background: #77BCFD;
   flex: 0 0 50%;
+  position: relative;
+}
+.main .top .box-1 .box-1-container {
+  max-height: 100%;
+  overflow: auto;
+  padding: 0.5rem 2rem;
 }
 .main .top .drag-x {
-  background: grey;
+  background: linear-gradient(360deg, gray 50%, white 100%);
   cursor: col-resize;
   flex: 0 0 8px;
 }
 .main .top .box-2 {
-  background: salmon;
+  background: url(./assets/img/web-5348016_1920.jpg) center/cover;
   flex: 1;
 }
 .main .drag-y {
-  background: grey;
+  background: linear-gradient(90deg, gray 55%, white 100%);
   cursor: row-resize;
+  caret-color: auto;
   flex: 0 0 8px;
+  z-index: 10;
 }
 .main .bottom {
-  background: greenyellow;
+  background: #c4ada0;
   flex: 1;
+  overflow: hidden;
+}
+.main .bottom .bottom-container {
+  max-height: 100%;
+  overflow: auto;
+  display: flex;
+}
+.main .bottom .bottom-container h3 {
+  padding: 3rem;
+}
+.main .bottom .bottom-container p {
+  padding: 3.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
